@@ -1,0 +1,355 @@
+/* General styling */
+* {
+	box-sizing: border-box;
+}
+hr {
+	width: 100%;
+}
+button:not(.nav) {
+	color: white;
+	background-color: transparent;
+	border: 1px solid #fff4;
+	border-radius: 3px;
+	padding: 8px;
+}
+button:not(.nav):disabled {
+	opacity: .5;
+}
+button:not(.nav):not(:disabled) {
+	cursor: pointer;
+}
+button:not(.nav):not(:disabled):hover {
+	background-color: #fff4;
+}
+code {
+	background-color: #fff4;
+	border-radius: 3px;
+}
+abbr[title] {
+	cursor: help;
+}
+form>label {
+	display: block;
+}
+form *.danger {
+	color: red;
+}
+svg {
+	cursor: default;
+	user-select: none;
+}
+
+.textit { font-style: italic; }
+.textsc { font-variant: small-caps; }
+.textthemed { color: var(--theme, inherit); }
+
+/* Elements styling */
+:root {
+	--header-width: 15vw;
+	--theme: black;
+	--theme-contrast: white;
+}
+html,
+body {
+	color: white;
+	background-color: #212121;
+	font-family: sans-serif;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+header {
+	background-color: #444;
+	overflow-x: hidden;
+	overflow-y: auto;
+	scrollbar-width: thin;
+	position: fixed;
+	width: var(--header-width);
+	height: 100vh;
+}
+header>a {
+	display: block;
+	width: 100%;
+	margin: 8px 0 12px;
+}
+header>a>img {
+	width: 100%;
+}
+header>nav ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+header>nav>ul {
+	margin: 8px 0;
+}
+header>nav:not([data-wizards="true"]) ul>li.data-wizard {
+	display: none;
+}
+header>nav:not([data-collaborations="true"]) ul>li.data-collaboration,
+header>nav:not([data-collaborations="true"]) ul>li.data-collaboration-marker {
+	display: none;
+}
+header>nav ul>li.data-collaboration-marker {
+	opacity: .5;
+	user-select: none;
+	margin-top: 8px;
+}
+header>nav ul>li.data-collaboration-marker::before {
+	content: "\2014";
+	margin-right: 8px;
+}
+header>nav ul>li.data-collaboration-marker::after {
+	content: "\2014";
+	margin-left: 8px;
+}
+header>nav:not([data-spoilers="true"]) ul>li.data-spoiler {
+	display: none;
+}
+header>nav ul>li>button {
+	color: inherit;
+	background-color: transparent;
+	font-size: larger;
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+	padding: 8px 0;
+	border: none;
+}
+header>nav ul>li>button::after {
+	content: "\25BC";
+	margin-left: 8px;
+}
+header>nav ul>li:not(:focus-within)>button:not(.active)~ul {
+	display: none;
+}
+header>nav ul>li>button.active::after,
+header>nav ul>li:focus-within>button::after {
+	content: "\25B2";
+}
+header>nav ul>li>a {
+	color: inherit;
+	text-align: start;
+	text-decoration: none;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+header>nav ul>li>button.active,
+header>nav ul>li>a.active,
+header>nav ul>li>button:hover,
+header>nav ul>li>a:hover {
+	color: var(--theme-contrast, white);
+	background-color: var(--theme, #fff4);
+}
+header>nav ul>li>a>p {
+	margin: auto 0 auto 10%;
+}
+main {
+	display: grid;
+	grid: 100% / calc(50% - 8px) auto;
+	gap: 8px;
+	width: 85vw;
+	height: 100vh;
+	padding: 8px;
+	margin-left: var(--header-width);
+}
+main:not([class=""]) a {
+	color: var(--theme, inherit);
+}
+main>div#empty {
+	grid-column: 1 / span 2;
+	text-align: center;
+	user-select: none;
+	height: min-content;
+	margin: auto 0;
+}
+main:not([class=""])>div#empty {
+	display: none;
+}
+main[class=""]>*:not(div#empty) {
+	display: none;
+}
+main>div#empty>h1 {
+	opacity: .5;
+}
+main>div#empty>form>h3 {
+	margin-bottom: 8px;
+}
+main>div#empty>button {
+	--width: 15vw;
+	width: var(--width);
+	position: absolute;
+	bottom: 12px;
+	left: calc(var(--header-width) + (100vw - var(--header-width) - var(--width)) / 2);
+}
+main>div.img-container {
+	display: flex;
+	background-position: top right;
+	background-size: 20%;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 100%;
+}
+main>div.img-container>img {
+	flex: 0 0 auto;
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
+}
+main>div.data-container {
+	flex-direction: column;
+	display: flex;
+}
+main>div.data-container>h1 {
+	color: var(--theme-contrast, white);
+	background-color: var(--theme, transparent);
+	text-align: center;
+	height: min-content;
+	margin: 0;
+}
+main>div.data-container>h1>span.textit::before {
+	content: "\3008";
+	font-style: normal;
+}
+main>div.data-container>h1>span.textit::after {
+	content: "\3009";
+	font-style: normal;
+}
+main>div.data-container>div {
+	flex: 1 1 auto;
+	justify-content: space-between;
+	gap: 2px;
+	display: flex;
+}
+main>div.data-container>div:first-of-type {
+	padding-right: 16px;
+}
+main>div.data-container ul {
+	list-style: none;
+	flex-direction: column;
+	justify-content: space-evenly;
+	display: flex;
+	padding-left: 16px;
+	margin: 0;
+}
+main>div.data-container div:not(.svg-container)>ul {
+	flex: 1 1 auto;
+}
+main>div.data-container div:not(.svg-container)>ul>li[data-field~="Angel Demon"]:empty {
+	display: none;
+}
+main>div.data-container div.svg-container>ul>li[data-field] {
+	font-weight: bold;
+}
+main>div.data-container div:not(.svg-container)>ul>li[data-field]::before {
+	content: attr(data-field);
+	color: white;
+	font-weight: bold;
+	margin-right: 1em;
+}
+main>div.data-container div.svg-container>ul>li[data-field]::after {
+	font-weight: normal;
+}
+main>div.data-container div.svg-container {
+	flex: 0 0 50%;
+	justify-content: space-around;
+	flex-direction: column;
+	display: flex;
+}
+main>div.data-container div.svg-container>h3 {
+	color: var(--theme-contrast, white);
+	background-color: var(--theme, transparent);
+	text-align: center;
+	margin: 16px 0;
+}
+main>div.data-container div.svg-container>ul {
+	list-style: none;
+	justify-content: space-evenly;
+	flex-direction: row;
+	flex-wrap: wrap;
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+main>div.data-container div.svg-container>ul>li[data-value] {
+	margin: 0 8px;
+}
+main>div.data-container div.svg-container>ul>li[data-value]::after {
+	content: " "attr(data-value);
+}
+main>div.data-container div.svg-container>ul>li>abbr {
+	font-weight: bold;
+}
+main>div.data-container div.svg-container>svg {
+	flex: 1 1 auto;
+	display: block;
+	width: 100%;
+	height: auto;
+}
+main>div.data-container div.svg-container>svg>* {
+	stroke: white;
+	fill: transparent;
+}
+main>div.data-container div.svg-container>svg>path {
+	opacity: .25;
+}
+main>div.data-container div.svg-container>svg>text {
+	stroke: none;
+	fill: white;
+}
+main>div.data-container div.svg-container>svg>text[data-field] {
+	text-transform: uppercase;
+	font-size: xx-large;
+	font-weight: bold;
+	fill: var(--theme-contrast, white);
+	stroke: var(--theme, transparent);
+}
+main>div.data-container div.svg-container>svg>polygon:last-of-type {
+	stroke: none;
+	fill: var(--theme, #fff8);
+}
+main>div.data-container div.svg-container>ul:last-of-type>li:not([data-field]) {
+	padding: 0 8px 0 2px;
+	border-radius: 2em;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Physical {
+	background-color: #76553d;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Fire {
+	background-color: #8c3131;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Frost {
+	background-color: #356687;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Lightning {
+	background-color: #4253be;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Tempest {
+	background-color: #416a41;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Magic {
+	background-color: #762b65;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Holy {
+	background-color: #837b41;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Dark {
+	background-color: #343465;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Spiritual {
+	background-color: #9e5496;
+	padding-left: 8px;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li.data-element-Space {
+	background-color: #73638c;
+	padding-left: 8px;
+}
+main>div.data-container div.svg-container>ul:last-of-type>li:not([data-field])>img {
+	position: relative;
+	top: 1.5px;
+	height: 1em;
+	margin-right: 4px;
+}

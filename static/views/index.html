@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>&lceil;Date A Live&rfloor; Spirits</title>
+	<link rel="preload" as="image" type="image/webp" href="https://vignette4.wikia.nocookie.net/date-a-live/images/8/89/Wiki-wordmark.png" />
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<link id="DATA" rel="prefetch" as="fetch" type="text/csv" href="https://raw.githubusercontent.com/Dragonink/DAL_Spirits/master/static/data/spirits.csv" />
+	<script type="application/javascript" src="bundle.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<a href="#">
+			<img src="https://vignette4.wikia.nocookie.net/date-a-live/images/8/89/Wiki-wordmark.png" alt="Date A Live" />
+		</a>
+		<nav>
+			<ul></ul>
+		</nav>
+	</header>
+	<main class="">
+		<div id="empty">
+			<h1>Select a Spirit from the menu on the left</h1>
+			<form action="" method="dialog">
+				<h3>Unlock more Spirits in the menu</h3>
+				<label>
+					<input name="additional" value="wizards" type="checkbox" />
+					Main Wizards
+				</label>
+				<label>
+					<input name="additional" value="collaborations" type="checkbox" />
+					Collaboration Spirits from <i>Spirit Pledge</i>
+				</label>
+				<label class="danger">
+					<input name="additional" value="spoilers" type="checkbox" />
+					Spoilers
+				</label>
+			</form>
+			<button id="db-up" class="textsc" disabled>force database update</button>
+		</div>
+		<div class="img-container">
+			<img />
+		</div>
+		<div class="data-container">
+			<h1></h1>
+			<div>
+				<ul id="power-info"></ul>
+				<ul id="personal-info"></ul>
+			</div>
+			<div>
+				<div id="lore-stats" class="svg-container">
+					<h3>Lore stats</h3>
+					<ul>
+						<li data-field="STR"><abbr title="Strength">STR</abbr></li>
+						<li data-field="CST"><abbr title="Consistency">CST</abbr></li>
+						<li data-field="SPI"><abbr title="Spiritual Power">SPI</abbr></li>
+						<li data-field="AGI"><abbr title="Agility">AGI</abbr></li>
+						<li data-field="INT"><abbr title="Intelligence">INT</abbr></li>
+					</ul>
+					<svg xmlns="https://www.w3.org/2000/svg" viewBox="-140 -125 280 230">
+						<polygon points="0,-100 -95,-31 -59,81 59,81 95,-31" />
+						<path d="M0 0 l0 -100 M0 0 l-95 -31 M0 0 l-59 81 M0 0 l59 81 M0 0 l95 -31" />
+						<text x="0" y="-105" text-anchor="middle">STR</text>
+						<text x="-100" y="-27" text-anchor="end">CST</text>
+						<text x="-59" y="96" text-anchor="end">SPI</text>
+						<text x="59" y="96" text-anchor="start">AGI</text>
+						<text x="100" y="-27" text-anchor="start">INT</text>
+						<polygon points="0,0 0,0 0,0 0,0 0,0" />
+						<text data-field="Class" x="0" y="10" text-anchor="middle"></text>
+					</svg>
+				</div>
+				<div id="SP-stats" class="svg-container">
+					<h3><i>Spirit Pledge</i> stats</h3>
+					<ul>
+						<li data-field="ATK"><abbr title="Attack">ATK</abbr></li>
+						<li data-field="CMB"><abbr title="Combo">CMB</abbr></li>
+						<li data-field="SUP"><abbr title="Support">SUP</abbr></li>
+						<li data-field="DEF"><abbr title="Defense">DEF</abbr></li>
+						<li data-field="CTR"><abbr title="Control">CTR</abbr></li>
+						<li data-field="DPS"><abbr title="Damage Per Second">DPS</abbr></li>
+					</ul>
+					<svg xmlns="https://www.w3.org/2000/svg" viewBox="-130 -125 260 250">
+						<polygon points="0,-100 -87,-50 -87,50 0,100 87,50 87,-50" />
+						<path d="M0 0 l0 -100 M0 0 l-87 -50 M0 0 l-87 50 M0 0 l0 100 M0 0 l87 50 M0 0 l87 -50" />
+						<text x="0" y="-105" text-anchor="middle">ATK</text>
+						<text x="-92" y="-50" text-anchor="end">CMB</text>
+						<text x="-92" y="64" text-anchor="end">SUP</text>
+						<text x="0" y="117" text-anchor="middle">DEF</text>
+						<text x="92" y="64" text-anchor="start">CTR</text>
+						<text x="92" y="-50" text-anchor="start">DPS</text>
+						<polygon points="0,0 0,0 0,0 0,0 0,0 0,0" />
+						<text data-field="Rank" x="0" y="10" text-anchor="middle"></text>
+					</svg>
+					<ul>
+						<li data-field="Elemental DMG">Elemental <abbr title="Damage">DMG</abbr></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>
