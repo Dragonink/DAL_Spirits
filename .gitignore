@@ -1,0 +1,9 @@
+/build/
+/dist/
+## Node.js
+node_modules/
+## TypeScript
+*.tsbuildinfo
+
+## Visual Studio Code
+.vscode/

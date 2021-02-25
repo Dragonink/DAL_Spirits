@@ -1,0 +1,18 @@
+{
+	"name": "dal_spirits",
+	"version": "1.0.0",
+	"description": "Bundled webpage about Date A Live characters",
+	"author": "Dragonink (https://github.com/Dragonink)",
+	"repository": "github:Dragonink/DAL_Spirits",
+	"private": true,
+	"dependencies": {
+		"object-hash": "^2.1.1"
+	},
+	"devDependencies": {
+		"@types/object-hash": "^1.3.4",
+		"typescript": "4.1.5"
+	},
+	"bundledDependencies": [
+		"object-hash"
+	]
+}
