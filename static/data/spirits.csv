@@ -1,0 +1,96 @@
+series,firstname,lastname,gender,codename,form,icon_id,image_id,sephiras,sephira_subtitles,angels,angel_subtitles,astraldress,birthday,height,weight,B,W,H,class,STR,CST,SPI,AGI,INT,rank,ATK,CMB,SUP,DEF,CTR,DPS,elDMG,theme,spoiler
+
+
+,Tohka,Yatogami,,Princess,Spirit,1101011,,s:Malkuth,Kingship,a:Sandalphon,Massacre Ruler,ad:Adonai Melek:10,April 10,155,49,84,58,83,aaa,230,202,125,142,32,a,60,40,18,60,45,78,p,ce57f0,
+,Tohka,Yatogami,,Princess,Inverse Spirit,1101014,1101031,q:Nehemoth:Malkuth,Whispers,d:Nahemah:Naamah_(demon),Tyrant Ruler,,April 10,155,49,84,58,83,ss,240,178,201,150,33,ss,95,61,39,80,39,100,d,ce57f0,
+,Tohka,Yatogami,,Princess,Full,1101015,,s:Malkuth,Kingship,a:Sandalphon;a:Shekinah,Massacre Ruler;Emperor of Annihilation,ad:Adonai Melek Ensufall:10,April 10,155,49,84,58,83,,,,,,,s,95,95,20,60,58,80,ph,ce57f0,
+,Tohka,Yatogami,,Princess,Dea,,,s:Malkuth,Kingship,a:Sandalphon;d:Nahemah:Naamah_(demon),Massacre Ruler;Tyrant Ruler,,April 10,155,49,84,58,83,,,,,,,,,,,,,,,ce57f0,true
+
+,Yoshino,Himekawa,,Hermit,Spirit,1103011,,s:Chesed,Kindness,a:Zadkiel,Freezing Puppet,ad:El:4,,144,35,73,55,78,b,95,82,199,212,152,b,40,50,60,25,60,39,i,44bf2b,
+,Yoshino,Himekawa,,Hermit,Ice Princess,1103021,,s:Chesed,Kindness,a:Zadkiel,Freezing Puppet,ad:El:4,,144,35,73,55,78,,,,,,,s,81,62,62,78,78,65,i,44bf2b,
+
+,Kurumi,Tokisaki,,Nightmare,Spirit,1104011,,s:Binah:Binah_(Kabbalah),Understanding,a:Zafkiel,Time Emperor,ad:Elohim:3,,157,48,85,59,87,s,109,80,220,103,201,s,80,76,76,59,59,78,d,dc060e,
+,Kurumi,Tokisaki,,Nightmare,Crimson Nightmare,1104023,1104016,s:Binah:Binah_(Kabbalah),Understanding,a:Zafkiel,Time Emperor,ad:Elohim:3,,157,48,85,59,87,,,,,,,ss,95,85,85,100,85,61,d,dc060e,
+,Kurumi,Tokisaki,,Nightmare,Double Spirit,,,s:Binah:Binah_(Kabbalah);s:Chokhmah,Understanding;Wisdom,a:Zafkiel;a:Rasiel,Time Emperor;Tome of Revelation,,,157,48,85,59,87,,,,,,,,,,,,,,,dc060e,true
+
+,Mana,Takamiya,,,DEM Wizard,1106011,,,,w:Murakumo,,cr:Murakumo,,147,,,,,,,,,,,a,55,77,30,30,30,77,l,54a7f9,
+,Mana,Takamiya,,,Ratatoskr Wizard,1106021,,,,w:Vanargandr,,cr:Vanargandr,,147,,,,,,,,,,,aa,77,62,40,59,40,77,pl,54a7f9,
+
+,Kotori,Itsuka,,Efreet,Spirit,1105011,,s:Geburah,Severity,a:Camael,Bright Burning Annihilating Demon,ad:Elohim Gibor:5,August 3,145,48,72,53,74,aa,150,100,215,130,178,s,80,57,34,95,55,80,pf,ff526b,
+
+,Rinne,Sonogami,,Ruler,Irregular Spirit,,7/7a/Gamechar3,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,ss,110,180,210,101,170,,,,,,,,,c0253e,
+,Rinne,Sonogami,,Ruler,Irregular Spirit (Eden),,7/7a/Gamechar3,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,ss,205,220,244,209,200,,,,,,,,,c0253e,
+
+,Ellen,Mathers,,,DEM Wizard,1109011,,,,w:Pendragon,,cr:Pendragon,,160,,86,60,87,,,,,,,s,77,65,32,100,50,82,pl,bfa7b7,
+
+,Kaguya,Yamai,,Berserk,Spirit,1107011,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,157,,79,56,81,aaa,180,140,179,240,69,aa,73,62,53,53,30,80,pt,ff9c10,
+,Kaguya,Yamai,,Berserk,Inverse Spirit,,,q:Samael:Hod,Desolation,d:Adramelech,,,,157,,79,56,81,,,,,,,,,,,,,,,ff9c10,true
+,Yuzuru,Yamai,,Berserk,Spirit,1108011,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,158,,90,61,86,aaa,170,129,185,240,84,aa,75,75,42,54,33,83,pt,ff9c10,
+,Yuzuru,Yamai,,Berserk,Inverse Spirit,,,q:Samael:Hod,Desolation,d:Adramelech,,,,158,,90,61,86,,,,,,,,,,,,,,,ff9c10,true
+,Kazamachi,Yamai,,Berserk,Spirit,,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,,,,,,,,,,,,,,,,,,,,ff9c10,true
+
+,Miku,Izayoi,,Diva,Spirit,1110011,,s:Yesod,Foundation,a:Gabriel,Army-Breaking Songstress,ad:Shaddai El Chai:9,,165,,94,63,88,a,85,72,159,67,70,aa,80,42,85,60,75,64,s,ce9cff,
+
+,Mayuri,,,Judgement,Spirit,1112011,1120011,,,a:Kerubiel,Thunder Sanctuary,ad:Adonai Melekh:10000,,154,36,80,64,90,,,,,,,ss,77,77,77,77,77,77,h,!ffc644,
+
+,Maria,Arusu,,,Artificial Spirit,1124011,,,,,,,,,,,,,c,99,102,178,121,121,,,,,,,,,939bd5,
+,Marina,Arusu,,,Artificial Spirit,1125011,,,,,,,,,,,,,aa,139,98,165,187,135,,,,,,,,,8d7c5a,
+
+,Rio,Sonogami,,,Irregular Spirit,,9/9e/Rio1,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,a,30,28,45,45,31,,,,,,,,,db6196,
+,Rio,Sonogami,,,Irregular Spirit (Eden),,9/9e/Rio1,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,a,43,35,230,52,31,,,,,,,,,db6196,
+
+,Natsumi,Kyono,,Witch,Spirit,1113011,,s:Netzach,Victory,a:Haniel,Forgery Witch,ad:Adonai Tzabaoth:7,,144,34,68,55,70,b,79,65,180,82,174,s,81,30,58,90,80,74,pm,00a572,
+,Natsumi,Kyono,,Witch,Spirit (Haniel),1113012,b/bf/Natsumi_Adult_Form,s:Netzach,Victory,a:Haniel,Forgery Witch,ad:Adonai Tzabaoth:7,,170,34,85,59,87,b,79,65,180,82,174,s,81,30,58,90,80,74,pm,00a572,
+
+,Origami,Tobiichi,,,AST Wizard,1102011,,,,w:No Pain,,cr:Basic,,152,45,75,55,79,,,,,,,b,58,77,20,28,30,57,pf,!dfc663,
+,Origami,Tobiichi,,,DEM Wizard,1102081,1102018,,,w:Clarent,,cr:Mordred,,152,45,75,55,79,,,,,,,aa,77,77,45,77,53,62,l,!dfc663,
+,Origami,Tobiichi,,Angel,Spirit,1102091,,s:Kether,Crown,a:Metatron,Angel of Extinction,ad:Ehyeh:1,,152,45,75,55,79,aaa,158,152,219,136,243,s,95,78,60,81,40,83,h,!dfc663,
+,Origami,Tobiichi,,Devil,Inverse Spirit,1102101,,q:Thamiel:Kether,Adversary,d:Satan,Demon of Salvation,,,152,45,75,55,79,ss,198,202,242,128,230,ss,,,,,,,d,!dfc663,
+,Origami,Tobiichi,,Angel,Wizard Spirit,,,s:Kether,Crown,a:Metatron;w:Einherjar,Angel of Extinction,ad:Ehyeh:1;cr:Brynhildr,,152,45,75,55,79,,,,,,,,,,,,,,,!dfc663,true
+
+,Ren,,,,Irregular Spirit,,f/f5/Ren,,,a:Samael,Pure Land of Miasma,,,,,,,,,,,,,,,,,,,,,,5d396c,
+
+,Nia,Honjo,,Sister,Spirit,,f/f6/Nia,s:Chokhmah,Wisdom,a:Rasiel,Tome of Revelation,ad:Yod:2,,168,,76,59,80,a,60,59,142,64,245,,,,,,,,,!b3bec6,
+,Nia,Honjo,,Sister,Inverse Spirit,,,q:Chaigidel:Chokhmah,Confusion,d:Belzebuth:Beelzebub,Tome of Divine Corruption,,,168,,76,59,80,,,,,,,,,,,,,,,!b3bec6,true
+
+,Artemisia,Ashcroft,,,DEM Wizard,,b/b6/Artemisia_Bell_Ashcroft,,,w:Arondight,,cr:Lancelot,,,,,,,,,,,,,,,,,,,,,2573aa,
+
+,Mukuro,Hoshimiya,,Zodiac,Spirit,,4/46/Mukuro,s:Tiphareth,Beauty,a:Michael:Michael_(archangel),Seal-Removing Lord,ad:Eloah:6,,148,,91,60,88,aaa,142,121,205,138,67,,,,,,,,,d4a18a,
+,Mukuro,Hoshimiya,,Zodiac,Spirit (Shifuru),,4/46/Mukuro,s:Tiphareth,Beauty,a:Michael:Michael_(archangel),Seal-Removing Lord,ad:Eloah:6,,148,,91,60,88,s,205,192,225,221,67,,,,,,,,,d4a18a,
+,Mukuro,Hoshimiya,,Zodiac,Inverse Spirit,,,q:Thagirion:Tiphareth,Dispute,d:Belphegor,,,,148,,91,60,88,,,,,,,,,,,,,,,d4a18a,true
+
+,Nibelcole,,,,Pseudo-Spirit,,f/ff/Nibelcol_profile_pic,,,d:Belzebuth Yeled:Beelzebub,Tome of Divine Corruption,ad:Chaigidel Yeled:2i,,158,,83,58,84,,52,43,56,99,53,,,,,,,,,596b84,true
+
+,Reine,Murasame,,Phantom,Spirit,,5/55/Reine_Spirit,,,,,ad:Yah:0,,164,,95,63,89,ex,,,,,,,,,,,,,,!ffffff,true
+,Mio,Takamiya,,Deus,Spirit of Origin,,f/f1/Mio_Takamiya,,,a:Ain Soph Aur;a:Ain Soph;a:Ain:Ain_Soph,Sanctuary of All Things in Creation;Samsara of Paradise;Angel of Void,ad:Yah:0,,160,,89,60,87,ex,999,999,999,999,999,,,,,,,,,!ffffff,true
+
+,Isaac,Westcott,male,,Inverse Spirit,,8/80/Sir_Isaac_Ray_Pelham_Westcott,q:Chaigidel:Chokhmah,Confusion,d:Belzebuth:Beelzebub,Tome of Divine Corruption,,,,,,,,,,,,,,,,,,,,,,4c4348,true
+,Isaac,Westcott,male,,Second Spirit of Origin,,8/80/Sir_Isaac_Ray_Pelham_Westcott,,,d:Athiel;d:Belial;d:Qemetiel,Altar of Extreme Death;Eternal Prison;Demon of Void,,,,,,,,,,,,,,,,,,,,,,4c4348,true
+
+
+Date A Bullet,Sawa,Yamauchi,,White Queen,Spirit,1127011,,,,d:Lucifugus:Lucifuge_Rofocale,Lunatic Emperor,,,157,,85,59,87,,,,,,,ss,96,90,58,81,52,76,v,b69eb6,
+
+Date A Bullet,Hibiki,Higoromo,,,Quasi-Spirit,1126011,,,,u:King Killing,Throne Usurper,ad:Breeching Air:133,,,,,,,,,,,,,,,,,,,,,87a0be,
+
+Date A Bullet,Tsuan,,,,Quasi-Spirit,1128011,,,,u:Lailaps,Celestial Wolf,ad:Brinicle:15,,,,,,,,,,,,,,,,,,,,,b1507d,
+
+
+Index,Mikoto,Misaka,,,Esper,1116011,,,,e:Railgun,Super Electromagnetic Cannon,,May 2,161,,78,56,79,,,,,,,ss,95,77,77,77,55,83,l,1692f5,
+
+Index,Kuroko,Shirai,,,Esper,1117011,,,,e:Teleport,Spatial Movement,,July 14,152,,,,,,,,,,,s,60,74,82,62,76,59,p,ff9c04,
+
+
+Neptunia,Neptune,,,,CPU,1114011,,l:Planeptune:4/43,Land of Purple Progress,w:Goddess of Fate's Sword,,,,146,38,73,54,76,,,,,,,ss,,,,,,,p,9c5ade,
+Neptunia,Neptune,,,Purple Heart,HDD CPU,1114012,1114011,l:Planeptune:4/43,Land of Purple Progress,w:Goddess of Fate's Sword,,,,164,48,87,58,85,,,,,,,ss,,,,,,,p,9c5ade,
+
+Neptunia,Blanc,,,,CPU,1115011,,l:Lowee:4/45,Land of White Serenity,w:Goddess of Order's Axe,,,,144,36,71,53,77,,,,,,,ss,,,,,,,i,!afd0f9,
+Neptunia,Blanc,,,White Heart,HDD CPU,1115012,1115011,l:Lowee:4/45,Land of White Serenity,w:Goddess of Order's Axe,,,,146,37,73,53,77,,,,,,,ss,,,,,,,i,!afd0f9,
+
+Neptunia,Noire,,,,CPU,1122011,,l:Lastation:b/b5,Land of Black Regality,w:Goddess of Prosperity's Blade,,,,158,43,83,56,82,,,,,,,ss,,,,,,,pl,1d50c7,
+Neptunia,Noire,,,Black Heart,HDD CPU,1122012,,l:Lastation:b/b5,Land of Black Regality,w:Goddess of Prosperity's Blade,,,,160,45,83,57,83,,,,,,,ss,,,,,,,pl,1d50c7,
+
+Neptunia,Vert,,,,CPU,1123011,,l:Leanbox:f/f0,Land of Green Pastures,w:Goddess of Fertility's Spear,,,,163,48,93,61,87,,,,,,,ss,,,,,,,t,33aa66,
+Neptunia,Vert,,,Green Heart,HDD CPU,1123012,,l:Leanbox:f/f0,Land of Green Pastures,w:Goddess of Fertility's Spear,,,,167,49,95,61,88,,,,,,,ss,,,,,,,t,33aa66,
+
+
+DanMachi,Ais,Wallenstein,,,Adventurer,1131011,,,,,,,,162,,,,,,,,,,,,,,,,,,t,b29458,
