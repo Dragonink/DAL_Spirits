@@ -21,3 +21,11 @@ Just put the file somewhere and open it with your favorite web browser.
 - Webpage scripts are **TypeScript**
 	- Local storage of data and media uses [**IndexedDB**](https://developer.mozilla.org/docs/Web/API/IndexedDB_API)
 	- Data hashes are computed using [**object-hash**](https://www.npmjs.com/package/object-hash)
+
+### Bundling steps
+
+1. [**Browserify**](https://www.npmjs.com/package/browserify) (with [**tsify**](https://www.npmjs.com/package/tsify)) to compile **TypeScript** into a single **JavaScript** file usable in browsers
+2. [**Terser**](https://www.npmjs.com/package/terser) to compress **JavaScript**
+3. [**CSSO**](https://www.npmjs.com/package/csso) to compress **CSS**
+4. [**jsdom**](https://www.npmjs.com/package/jsdom) to inline **CSS** and **JavaScript** in **HTML**
+5. [**html-minifier-terser**](https://www.npmjs.com/package/html-minifier-terser) to compress **HTML**

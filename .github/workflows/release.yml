@@ -1,0 +1,27 @@
+name: Release version artifacts
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  release_artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Compress intermediates
+        run: npm run compress:*
+      - name: Generate artifacts
+        run: npm run bundle
+      - uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_name: DAL_Spirit.html
+          asset_path: dist/DAL_Spirits.html
+          asset_content_type: text/html
