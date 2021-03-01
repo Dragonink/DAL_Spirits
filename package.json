@@ -23,7 +23,7 @@
 	],
 	"scripts": {
 		"dev": "node scripts/dev.js static/views/index.html static/data/spirits.csv build/dev.html",
-		"postdev": "npm run build",
+		"postdev": "browserify src/index.ts --debug -p [tsify --global] -o build/bundle.js",
 		"build": "browserify src/index.ts -p [tsify --global] -o build/bundle.js",
 		"compress:js": "terser build/bundle.js --ecma 2020 --compress --mangle --keep-classnames -o build/bundle.js",
 		"compress:css": "csso static/views/index.css -o build/styles.css",
