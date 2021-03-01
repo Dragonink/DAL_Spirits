@@ -159,7 +159,7 @@ new Promise<boolean>((resolve, reject) => {
 						main.className = spirit.firstname;
 						(div => {
 							if (spirit.images.sephiraIcon) {
-								database.applyBlob(spirit.images.sephiraIcon, blobURL => void (div.style.backgroundImage = `url("${blobURL}")`), "data");
+								database.applyBlob(spirit.images.sephiraIcon, blobURL => void (div.style.backgroundImage = `url("${blobURL}")`));
 							} else {
 								div.style.backgroundImage = "none";
 							}

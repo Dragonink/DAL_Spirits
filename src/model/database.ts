@@ -39,10 +39,8 @@ export interface DataStrategy<T, I = number> {
 	/** Apply an URL to a blob
 	 * @param url URL of the blob
 	 * @param apply Function to apply an URL to the blob
-	 * @param type Type of URL to pass in `apply`
-	 * @param fallback Function called if the blob could not be found
 	 */
-	applyBlob(url: string, apply: (url: string) => void, type?: "blob" | "data", fallback?: () => void): void;
+	applyBlob(url: string, apply: (blobURL: string) => void): void;
 	/** Get all blob URLs
 	 * @returns Array of all blob URLs
 	 */
@@ -137,21 +135,11 @@ class OnlineDataStrategy<T> implements DataStrategy<T> {
 					return this.blobEventStore.dispatchEvent(url);
 				});
 	}
-	applyBlob(url: string, apply: (url: string) => void, type: "blob" | "data" = "blob", _fallback = console.error) {
+	applyBlob(url: string, apply: (blobURL: string) => void) {
 		return this.blobEventStore.addEventListener(url, () => {
-			switch (type) {
-				case "data": {
-					const reader = new FileReader();
-					reader.onload = _event => apply(reader.result as string);
-					return reader.readAsDataURL(this.blobs[url]!);
-				}
-				case "blob":
-				default: {
-					const blobURL = URL.createObjectURL(this.blobs[url]);
-					apply(blobURL);
-					return URL.revokeObjectURL(blobURL);
-				}
-			}
+			const reader = new FileReader();
+			reader.onload = _event => apply(reader.result as string);
+			return reader.readAsDataURL(this.blobs[url]!);
 		});
 	}
 	async getAllBlobs(): Promise<string[]> {
@@ -335,32 +323,20 @@ class LocalDataStrategy<T, I extends IDBValidKey> implements DataStrategy<T, I> 
 			})) :
 			new Promise((resolve, reject) => void this.taskQueue.push(() => this.newBlob(url).then(resolve).catch(reject)));
 	}
-	applyBlob(url: string, apply: (blobURL: string) => void, type: "blob" | "data" = "blob", fallback = console.error): void {
+	applyBlob(url: string, apply: (blobURL: string) => void): void {
 		return this.database ? this.blobEventStore.addEventListener(url, () => {
 			this.database!.transaction("blobs").objectStore("blobs")
 				.get(url)
 				.onsuccess = event => {
 					const blob = (event.target as IDBRequest<DatabaseBlob>).result?.blob;
 					if (blob) {
-						switch (type) {
-							case "data": {
-								const reader = new FileReader();
-								reader.onload = _event => apply(reader.result as string);
-								return reader.readAsDataURL(blob);
-							}
-							case "blob":
-							default: {
-								const blobURL = URL.createObjectURL(blob);
-								apply(blobURL);
-								return URL.revokeObjectURL(blobURL);
-							}
-						}
-					} else {
-						fallback("Could not apply blob %s", url);
+						const reader = new FileReader();
+						reader.onload = _event => apply(reader.result as string);
+						return reader.readAsDataURL(blob);
 					}
 				};
 		}) :
-			void this.taskQueue.push(async () => this.applyBlob(url, apply, type, fallback));
+			void this.taskQueue.push(async () => this.applyBlob(url, apply));
 	}
 	getAllBlobs(): Promise<string[]> {
 		return this.database ? new Promise((resolve, _reject) => {
