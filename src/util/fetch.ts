@@ -22,3 +22,15 @@ export default function getResource(url: string, type: XMLHttpRequestResponseTyp
 			}
 		});
 }
+
+/** Convert a blob into data URL
+ * @param blob Blob to convert
+ * @returns Data URL of the blob
+ */
+export function blobAsDataURL(blob: Blob): Promise<string> {
+	return new Promise((resolve, _reject) => {
+		const reader = new FileReader();
+		reader.onload = _event => resolve(reader.result as string);
+		reader.readAsDataURL(blob);
+	});
+}

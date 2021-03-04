@@ -1,4 +1,4 @@
-type Series = "Date A Live" | "Date A Bullet" | "Index" | "Neptunia" | "DanMachi";
+export type Series = "Date A Live" | "Date A Bullet" | "Index" | "Neptunia" | "DanMachi";
 type Gender = "female" | "male";
 interface Form {
 	readonly name: string;
@@ -52,11 +52,13 @@ interface PersonalInfo {
 	readonly W?: number;
 	readonly H?: number;
 }
-export type LoreStatLabels = "STR" | "CST" | "SPI" | "AGI" | "INT";
+export const LORE_STAT_LABELS = ["STR", "CST", "SPI", "AGI", "INT"] as const;
+export type LoreStatLabels = (typeof LORE_STAT_LABELS)[number];
 type LoreStats = Readonly<Partial<Record<LoreStatLabels, number>>> & {
 	readonly class?: string;
 };
-export type SPStatLabels = "ATK" | "CMB" | "SUP" | "DEF" | "CTR" | "DPS";
+export const SP_STAT_LABELS = ["ATK", "CMB", "SUP", "DEF", "CTR", "DPS"] as const;
+export type SPStatLabels = (typeof SP_STAT_LABELS)[number];
 type SPStatElementLabel = "Physical" | "Fire" | "Frost" | "Spiritual" | "Lightning" | "Tempest" | "Magic" | "Holy" | "Dark" | "Space";
 interface SPStatElement {
 	readonly label: SPStatElementLabel;
@@ -335,90 +337,92 @@ export default class Spirit {
 	 */
 	public static outputPowerInfo(spirit: Spirit, ul: HTMLUListElement) {
 		ul.innerHTML = "";
-		for (const list of ["sephiras", "angels", "astralDresses"] as const) if (spirit[list].length > 0) {
-			(() => {
-				switch (list) {
-					case "sephiras": return SEPHIRA_WORDING;
-					case "angels": return ANGEL_WORDING;
-					case "astralDresses": return ASTRALDRESS_WORDING;
-				}
-			})()?.forEach((wording: string) => {
-				const li = document.createElement("li");
-				li.dataset.field = wording;
-				const li_ul = (spirit[list] as PowerInfoItem[])
-					.filter(item => item.wording === wording)
-					.reduce((ul, item) => {
-						const li = document.createElement("li");
-						(item.link ? li.appendChild((a => {
-							a.target = "_blank";
-							a.href = item.link;
-							return a;
-						})(document.createElement("a"))) : li).textContent = item.name;
-						if (item.subtitle) {
-							li.innerHTML += ` &ndash; ${item.subtitle}`;
-							if (/\d$/.test(item.subtitle)) {
-								li.innerHTML += `<sup>${(() => {
-									switch (item.subtitle.charAt(item.subtitle.length - 1)) {
-										case "1": return "st";
-										case "2": return "nd";
-										case "3": return "rd";
-										default: return "th";
-									}
-								})()}</sup>`;
+		(["sephiras", "angels", "astralDresses"] as const).forEach(list => {
+			if (spirit[list].length > 0) {
+				(() => {
+					switch (list) {
+						case "sephiras": return SEPHIRA_WORDING;
+						case "angels": return ANGEL_WORDING;
+						case "astralDresses": return ASTRALDRESS_WORDING;
+					}
+				})()?.forEach((wording: string) => {
+					const li = document.createElement("li");
+					li.dataset.field = wording;
+					const li_ul = (spirit[list] as PowerInfoItem[])
+						.filter(item => item.wording === wording)
+						.reduce((ul, item) => {
+							const li = document.createElement("li");
+							(item.link ? li.appendChild((a => {
+								a.target = "_blank";
+								a.href = item.link;
+								return a;
+							})(document.createElement("a"))) : li).textContent = item.name;
+							if (item.subtitle) {
+								li.innerHTML += ` &ndash; ${item.subtitle}`;
+								if (/\d$/.test(item.subtitle)) {
+									li.innerHTML += `<sup>${(() => {
+										switch (item.subtitle.charAt(item.subtitle.length - 1)) {
+											case "1": return "st";
+											case "2": return "nd";
+											case "3": return "rd";
+											default: return "th";
+										}
+									})()}</sup>`;
+								}
 							}
+							ul.appendChild(li);
+							return ul;
+						}, document.createElement("ul"));
+					if (li_ul.children.length > 0) {
+						ul.appendChild(li).appendChild(li_ul);
+					}
+				});
+			} else {
+				const li = document.createElement("li");
+				switch (list) {
+					case "sephiras": {
+						if ((spirit.series === "Date A Live" && !/Wizard/.test(spirit.form.name)) || spirit.series === "Neptunia") {
+							li.dataset.field = (() => {
+								switch (spirit.series) {
+									case "Neptunia": return "Land";
+									default: return spirit.angels.length > 0 && spirit.angels.every(angel => angel.wording === "Demon") ? "Qlipha" : "Sephira";
+								}
+							})();
+							li.innerHTML = "<i>None</i>";
 						}
-						ul.appendChild(li);
-						return ul;
-					}, document.createElement("ul"));
-				if (li_ul.children.length > 0) {
-					ul.appendChild(li).appendChild(li_ul);
-				}
-			});
-		} else {
-			const li = document.createElement("li");
-			switch (list) {
-				case "sephiras": {
-					if ((spirit.series === "Date A Live" && !/Wizard/.test(spirit.form.name)) || spirit.series === "Neptunia") {
+						break;
+					}
+					case "angels": {
 						li.dataset.field = (() => {
-							switch (spirit.series) {
-								case "Neptunia": return "Land";
-								default: return spirit.angels.length > 0 && spirit.angels.every(angel => angel.wording === "Demon") ? "Qlipha" : "Sephira";
+							switch (spirit.form.name) {
+								case "Esper": return "Esper Power";
+								case "Quasi-Spirit": return "Unsigned Angel";
+								case "Adventurer":
+								case "CPU":
+								case "HDD CPU":
+								case "Ratatoskr Wizard":
+								case "AST Wizard":
+								case "DEM Wizard": return "Weapon";
+								case "Inverse Spirit": return "Demon";
+								default: return "Angel";
 							}
 						})();
 						li.innerHTML = "<i>None</i>";
+						break;
 					}
-					break;
-				}
-				case "angels": {
-					li.dataset.field = (() => {
-						switch (spirit.form.name) {
-							case "Esper": return "Esper Power";
-							case "Quasi-Spirit": return "Unsigned Angel";
-							case "Adventurer":
-							case "CPU":
-							case "HDD CPU":
-							case "Ratatoskr Wizard":
-							case "AST Wizard":
-							case "DEM Wizard": return "Weapon";
-							case "Inverse Spirit": return "Demon";
-							default: return "Angel";
+					case "astralDresses": {
+						if (spirit.series === "Date A Live" && spirit.gender === "female") {
+							li.dataset.field = /Wizard/.test(spirit.form.name) ? "CR-Unit" : "Astral Dress";
+							li.innerHTML = "<i>Unnamed</i>";
 						}
-					})();
-					li.innerHTML = "<i>None</i>";
-					break;
-				}
-				case "astralDresses": {
-					if (spirit.series === "Date A Live" && spirit.gender === "female") {
-						li.dataset.field = /Wizard/.test(spirit.form.name) ? "CR-Unit" : "Astral Dress";
-						li.innerHTML = "<i>Unnamed</i>";
+						break;
 					}
-					break;
+				}
+				if (li.innerHTML.length > 0) {
+					ul.appendChild(li);
 				}
 			}
-			if (li.innerHTML.length > 0) {
-				ul.appendChild(li);
-			}
-		}
+		});
 	}
 	/** Output the personal info of the character
 	 * @param spirit `Spirit` instance

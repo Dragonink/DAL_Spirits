@@ -19,7 +19,7 @@ export default class SpiritGraph<L extends string> {
 	/** HTML SVG element */
 	private readonly GRAPH: SVGSVGElement;
 	/** Array of the stat labels */
-	private readonly labels: L[];
+	private readonly labels: readonly L[];
 	/** Function to transform raw values */
 	private readonly transform: (stat: number) => number;
 	/** Origin point in the graph */
