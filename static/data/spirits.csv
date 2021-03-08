@@ -23,15 +23,15 @@ series,firstname,lastname,gender,codename,form,icon_id,image_id,sephiras,sephira
 
 ,Ellen,Mathers,,,DEM Wizard,1109011,,,,w:Pendragon,,cr:Pendragon,,160,,86,60,87,,,,,,,s,77,65,32,100,50,82,pl,bfa7b7,
 
-,Kaguya,Yamai,,Berserk,Spirit,1107011,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,157,,79,56,81,aaa,180,140,179,240,69,aa,73,62,53,53,30,80,pt,ff9c10,
-,Kaguya,Yamai,,Berserk,Inverse Spirit,,,q:Samael:Hod,Desolation,d:Adramelech,,,,157,,79,56,81,,,,,,,,,,,,,,,ff9c10,true
-,Yuzuru,Yamai,,Berserk,Spirit,1108011,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,158,,90,61,86,aaa,170,129,185,240,84,aa,75,75,42,54,33,83,pt,ff9c10,
-,Yuzuru,Yamai,,Berserk,Inverse Spirit,,,q:Samael:Hod,Desolation,d:Adramelech,,,,158,,90,61,86,,,,,,,,,,,,,,,ff9c10,true
-,Kazamachi,Yamai,,Berserk,Spirit,,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,,,,,,,,,,,,,,,,,,,,ff9c10,true
+,Kaguya,Yamai,,Berserk,Spirit,1107011,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,157,,79,56,81,aaa,180,140,179,240,69,aa,73,62,53,53,30,80,pt,!ff9c10,
+,Kaguya,Yamai,,Berserk,Inverse Spirit,,,q:Samael:Hod,Desolation,d:Adramelech,,,,157,,79,56,81,,,,,,,,,,,,,,,!ff9c10,true
+,Yuzuru,Yamai,,Berserk,Spirit,1108011,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,158,,90,61,86,aaa,170,129,185,240,84,aa,75,75,42,54,33,83,pt,!ff9c10,
+,Yuzuru,Yamai,,Berserk,Inverse Spirit,,,q:Samael:Hod,Desolation,d:Adramelech,,,,158,,90,61,86,,,,,,,,,,,,,,,!ff9c10,true
+,Kazamachi,Yamai,,Berserk,Spirit,,,s:Hod:Hod_(Kabbalah),Splendor,a:Raphael:Raphael_(archangel),Hurricane Knight,ad:Elohim Tzabaoth:8,,,,,,,,,,,,,,,,,,,,,!ff9c10,true
 
-,Miku,Izayoi,,Diva,Spirit,1110011,,s:Yesod,Foundation,a:Gabriel,Army-Breaking Songstress,ad:Shaddai El Chai:9,,165,,94,63,88,a,85,72,159,67,70,aa,80,42,85,60,75,64,s,ce9cff,
+,Miku,Izayoi,,Diva,Spirit,1110011,,s:Yesod,Foundation,a:Gabriel,Army-Breaking Songstress,ad:Shaddai El Chai:9,,165,,94,63,88,a,85,72,159,67,70,aa,80,42,85,60,75,64,s,!ce9cff,
 
-,Mayuri,,,Judgement,Spirit,1112011,1120011,,,a:Kerubiel,Thunder Sanctuary,ad:Adonai Melekh:10000,,154,36,80,64,90,,,,,,,ss,77,77,77,77,77,77,h,!ffc644,
+,Mayuri,,,Judgement,Irregular Spirit,1112011,1120011,,,a:Kerubiel,Thunder Sanctuary,ad:Adonai Melekh:10000,,154,36,80,64,90,,,,,,,ss,77,77,77,77,77,77,h,!ffc644,
 
 ,Maria,Arusu,,,Artificial Spirit,1124011,,,,,,,,,,,,,c,99,102,178,121,121,,,,,,,,,939bd5,
 ,Marina,Arusu,,,Artificial Spirit,1125011,,,,,,,,,,,,,aa,139,98,165,187,135,,,,,,,,,8d7c5a,
@@ -39,8 +39,8 @@ series,firstname,lastname,gender,codename,form,icon_id,image_id,sephiras,sephira
 ,Rio,Sonogami,,,Irregular Spirit,,9/9e/Rio1,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,a,30,28,45,45,31,,,,,,,,,db6196,
 ,Rio,Sonogami,,,Irregular Spirit (Eden),,9/9e/Rio1,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,a,43,35,230,52,31,,,,,,,,,db6196,
 
-,Natsumi,Kyono,,Witch,Spirit,1113011,,s:Netzach,Victory,a:Haniel,Forgery Witch,ad:Adonai Tzabaoth:7,,144,34,68,55,70,b,79,65,180,82,174,s,81,30,58,90,80,74,pm,00a572,
-,Natsumi,Kyono,,Witch,Spirit (Haniel),1113012,b/bf/Natsumi_Adult_Form,s:Netzach,Victory,a:Haniel,Forgery Witch,ad:Adonai Tzabaoth:7,,170,34,85,59,87,b,79,65,180,82,174,s,81,30,58,90,80,74,pm,00a572,
+,Natsumi,Kyono,,Witch,Spirit,1113011,,s:Netzach,Victory,a:Haniel,Forgery Witch,ad:Adonai Tzabaoth:7,,144,34,69,55,70,b,79,65,180,82,174,s,81,30,58,90,80,74,pm,00a572,
+,Natsumi,Kyono,,Witch,Spirit (Haniel),1113012,b/bf/Natsumi_Adult_Form,s:Netzach,Victory,a:Haniel,Forgery Witch,ad:Adonai Tzabaoth:7,,170,,94,55,70,b,79,65,180,82,174,s,81,30,58,90,80,74,pm,00a572,
 
 ,Origami,Tobiichi,,,AST Wizard,1102011,,,,w:No Pain,,cr:Basic,,152,45,75,55,79,,,,,,,b,58,77,20,28,30,57,pf,!dfc663,
 ,Origami,Tobiichi,,,DEM Wizard,1102081,1102018,,,w:Clarent,,cr:Mordred,,152,45,75,55,79,,,,,,,aa,77,77,45,77,53,62,l,!dfc663,
@@ -55,13 +55,13 @@ series,firstname,lastname,gender,codename,form,icon_id,image_id,sephiras,sephira
 
 ,Artemisia,Ashcroft,,,DEM Wizard,,b/b6/Artemisia_Bell_Ashcroft,,,w:Arondight,,cr:Lancelot,,,,,,,,,,,,,,,,,,,,,2573aa,
 
-,Mukuro,Hoshimiya,,Zodiac,Spirit,,4/46/Mukuro,s:Tiphareth,Beauty,a:Michael:Michael_(archangel),Seal-Removing Lord,ad:Eloah:6,,148,,91,60,88,aaa,142,121,205,138,67,,,,,,,,,d4a18a,
-,Mukuro,Hoshimiya,,Zodiac,Spirit (Shifuru),,4/46/Mukuro,s:Tiphareth,Beauty,a:Michael:Michael_(archangel),Seal-Removing Lord,ad:Eloah:6,,148,,91,60,88,s,205,192,225,221,67,,,,,,,,,d4a18a,
-,Mukuro,Hoshimiya,,Zodiac,Inverse Spirit,,,q:Thagirion:Tiphareth,Dispute,d:Belphegor,,,,148,,91,60,88,,,,,,,,,,,,,,,d4a18a,true
+,Mukuro,Hoshimiya,,Zodiac,Spirit,,4/46/Mukuro,s:Tiphareth,Beauty,a:Michael:Michael_(archangel),Seal-Removing Lord,ad:Eloah:6,,148,,91,60,88,aaa,142,121,205,138,67,,,,,,,,,!d4a18a,
+,Mukuro,Hoshimiya,,Zodiac,Spirit (Shifuru),,4/46/Mukuro,s:Tiphareth,Beauty,a:Michael:Michael_(archangel),Seal-Removing Lord,ad:Eloah:6,,148,,91,60,88,s,205,192,225,221,67,,,,,,,,,!d4a18a,
+,Mukuro,Hoshimiya,,Zodiac,Inverse Spirit,,,q:Thagirion:Tiphareth,Dispute,d:Belphegor,,,,148,,91,60,88,,,,,,,,,,,,,,,!d4a18a,true
 
 ,Nibelcole,,,,Pseudo-Spirit,,f/ff/Nibelcol_profile_pic,,,d:Belzebuth Yeled:Beelzebub,Tome of Divine Corruption,ad:Chaigidel Yeled:2i,,158,,83,58,84,,52,43,56,99,53,,,,,,,,,596b84,true
 
-,Reine,Murasame,,Phantom,Spirit,,5/55/Reine_Spirit,,,,,ad:Yah:0,,164,,95,63,89,ex,,,,,,,,,,,,,,!ffffff,true
+,Reine,Murasame,,Phantom,Irregular Spirit,,5/55/Reine_Spirit,,,,,ad:Yah:0,,164,,95,63,89,ex,,,,,,,,,,,,,,!ffffff,true
 ,Mio,Takamiya,,Deus,Spirit of Origin,,f/f1/Mio_Takamiya,,,a:Ain Soph Aur;a:Ain Soph;a:Ain:Ain_Soph,Sanctuary of All Things in Creation;Samsara of Paradise;Angel of Void,ad:Yah:0,,160,,89,60,87,ex,999,999,999,999,999,,,,,,,,,!ffffff,true
 
 ,Isaac,Westcott,male,,Inverse Spirit,,8/80/Sir_Isaac_Ray_Pelham_Westcott,q:Chaigidel:Chokhmah,Confusion,d:Belzebuth:Beelzebub,Tome of Divine Corruption,,,,,,,,,,,,,,,,,,,,,,4c4348,true
