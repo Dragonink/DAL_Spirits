@@ -185,23 +185,53 @@ main>div#empty>button {
 	left: calc(var(--header-width) + (100vw - var(--header-width) - var(--width)) / 2);
 }
 main>div.img-container {
+	--main-image-space: 80%;
+
 	display: flex;
-	background-position: top right;
-	background-size: 20%;
-	background-repeat: no-repeat;
-	width: 100%;
+	flex-direction: column;
 	height: 100%;
 }
 main>div.img-container>img {
-	flex: 0 0 auto;
 	display: block;
 	max-width: 100%;
-	max-height: 100%;
 	margin: auto;
 }
-main>div.data-container {
-	flex-direction: column;
+main>div.img-container.has-sephira>img {
+	max-height: var(--main-image-space);
+}
+main>div.img-container>div {
+	display: none;
+}
+main>div.img-container.has-sephira>div {
 	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: calc(100% - var(--main-image-space));
+	outline: 2px solid var(--theme);
+}
+main>div.img-container>div>span {
+	background-color: var(--theme);
+	color: var(--theme-contrast);
+	writing-mode: sideways-lr;
+	height: 100%;
+	padding: 2px;
+}
+main>div.img-container>div>img {
+	object-fit: cover;
+	min-width: 0;
+	height: auto;
+	max-height: 100%;
+}
+main>div.img-container>div>img#sephira-icon {
+	flex: 0 0 max-content;
+	object-fit: contain;
+}
+main>div.img-container>div>img#sephira-icon.inverse {
+	filter: contrast(135%) brightness(75%) saturate(200%) hue-rotate(90deg);
+}
+main>div.data-container {
+	display: flex;
+	flex-direction: column;
 }
 main>div.data-container>h1 {
 	color: var(--theme-contrast, white);

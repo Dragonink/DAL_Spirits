@@ -12,6 +12,7 @@ interface Codename {
 interface Images {
 	readonly menuIcon?: string;
 	readonly fullbodyImage?: string;
+	sephiraCharacter?: string;
 	sephiraIcon?: string;
 }
 interface PowerInfoItem {
@@ -162,15 +163,27 @@ export default class Spirit {
 		this.images = {
 			menuIcon: data.icon_id ? `https://raw.githubusercontent.com/n0k0m3/DateALiveData/master/res/basic/icon/hero/face/${data.icon_id}.png` : undefined,
 			fullbodyImage: data.image_id ? /^\d+$/.test(data.image_id) ? `https://raw.githubusercontent.com/n0k0m3/DateALiveData/master/res/basic/icon/teampic/${data.image_id}.png` : `https://static.wikia.nocookie.net/date-a-live/images/${data.image_id}.png` : data.icon_id ? `https://raw.githubusercontent.com/n0k0m3/DateALiveData/master/res/basic/icon/teampic/${data.icon_id}.png` : undefined,
+			sephiraCharacter: undefined,
 			sephiraIcon: undefined,
 		};
 		{
 			const sephira_subtitles = data.sephira_subtitles ? data.sephira_subtitles.split(";") : [];
 			this.sephiras = data.sephiras ? data.sephiras.split(";").map<Sephira>((format, i) => {
-				const URL_RADIX: string = "https://raw.githubusercontent.com/n0k0m3/DateALiveData/master/res/basic/icon/equipType/";
+				const URL_RADIX: string = "https://raw.githubusercontent.com/n0k0m3/DateALiveData/master/res/basic/icon/";
 				const info = format.split(":");
 				switch (info[0]) {
 					case "l": {
+						if (!this.images.sephiraCharacter) {
+							this.images.sephiraCharacter = URL_RADIX + `battleDialog/btlPortrait_${(() => {
+								switch (info[1]) {
+									case "Lowee": return "40216_a1";
+									case "Lastation": return "40220_weixiao";
+									case "Leanbox": return "40218_daiji";
+									default:
+									case "Planeptune": return "40214_b1";
+								}
+							})()}.png`;
+						}
 						if (!this.images.sephiraIcon) {
 							this.images.sephiraIcon = `https://static.wikia.nocookie.net/neptunia/images/${info[2]}/${info[1]}_Logo.png`;
 						}
@@ -182,8 +195,24 @@ export default class Spirit {
 						};
 					}
 					case "q": {
+						if (!this.images.sephiraCharacter) {
+							const image = (() => {
+								switch (info[2]) {
+									case "Kether": return "40201_a1";
+									case "Chokhmah": return "40202_a1";
+									case "Binah": return "40203_a1";
+									case "Chesed": return "40209_c1";
+									case "Geburah": return "31001L_d1";
+									case "Tiphareth": return "31101L_a1";
+									default: return undefined;
+								}
+							})();
+							if (image) {
+								this.images.sephiraCharacter = URL_RADIX + `battleDialog/btlPortrait_${image}.png`;
+							}
+						}
 						if (!this.images.sephiraIcon) {
-							this.images.sephiraIcon = URL_RADIX + `${info[2]}_gray.png`;
+							this.images.sephiraIcon = URL_RADIX + `equipType/${info[2]}.png`;
 						}
 						return {
 							wording: "Qlipha",
@@ -194,8 +223,21 @@ export default class Spirit {
 					}
 					case "s":
 					default: {
+						if (!this.images.sephiraCharacter) {
+							const image = (() => {
+								switch (info[1]) {
+									case "Chesed": return "40210_D1";
+									case "Geburah": return "40105_weixiao";
+									case "Tiphareth": return "40106_weixiao";
+									default: return undefined;
+								}
+							})();
+							if (image) {
+								this.images.sephiraCharacter = URL_RADIX + `battleDialog/btlPortrait_${image}.png`;
+							}
+						}
 						if (!this.images.sephiraIcon) {
-							this.images.sephiraIcon = URL_RADIX + `${info[1]}.png`;
+							this.images.sephiraIcon = URL_RADIX + `equipType/${info[1]}.png`;
 						}
 						return {
 							wording: "Sephira",
@@ -303,15 +345,29 @@ export default class Spirit {
 		this.spoiler = data.spoiler ?? false;
 	}
 
-	/** All images from the character
+	/** Get all images from the character
 	 * @param spirit `Spirit` instance
 	 * @returns Array of image URLs
 	 */
-	public static allImages(spirit: Spirit): string[] {
+	public static getAllImages(spirit: Spirit): string[] {
 		return [
 			...Object.values(spirit.images),
 			...(spirit.spStats?.elDMG?.map(el => el.icon) ?? [])
 		].filter((value): value is string => typeof value === "string");
+	}
+	/** Get the main sephira of the character
+	 * @param spirit `Spirit` instance
+	 * @returns Main sephira; or `undefined` if the character does not have one
+	 */
+	public static getMainSephira(spirit: Spirit): Sephira | undefined {
+		return spirit.sephiras.length > 0 ? spirit.sephiras[0] : undefined;
+	}
+	/** Get the main angel of the character
+	 * @param spirit `Spirit` instance
+	 * @returns Main angel; or `undefined` if the character does not have one
+	 */
+	public static getMainAngel(spirit: Spirit): Angel | undefined {
+		return spirit.angels.length > 0 ? spirit.angels[0] : undefined;
 	}
 	/** Output the full name of the character
 	 * @param spirit `Spirit` instance
