@@ -18,8 +18,8 @@ series,firstname,lastname,gender,codename,form,icon_id,image_id,sephiras,sephira
 
 ,Kotori,Itsuka,,Efreet,Spirit,1105011,,s:Geburah,Severity,a:Camael,Bright Burning Annihilating Demon,ad:Elohim Gibor:5,August 3,145,48,72,53,74,aa,150,100,215,130,178,s,80,57,34,95,55,80,pf,ff526b,
 
-,Rinne,Sonogami,,Ruler,Irregular Spirit,,7/7a/Gamechar3,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,ss,110,180,210,101,170,,,,,,,,,c0253e,
-,Rinne,Sonogami,,Ruler,Irregular Spirit (Eden),,7/7a/Gamechar3,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,ss,205,220,244,209,200,,,,,,,,,c0253e,
+,Rinne,Sonogami,,Ruler,Irregular Spirit,1133011,,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,ss,110,180,210,101,170,,,,,,,,,c0253e,
+,Rinne,Sonogami,,Ruler,Irregular Spirit (Eden),1133011,,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,ss,205,220,244,209,200,,,,,,,,,c0253e,
 
 ,Ellen,Mathers,,,DEM Wizard,1109011,,,,w:Pendragon,,cr:Pendragon,,160,,86,60,87,,,,,,,s,77,65,32,100,50,82,pl,bfa7b7,
 
@@ -36,8 +36,8 @@ series,firstname,lastname,gender,codename,form,icon_id,image_id,sephiras,sephira
 ,Maria,Arusu,,,Artificial Spirit,1124011,,,,,,,,,,,,,c,99,102,178,121,121,,,,,,,,,939bd5,
 ,Marina,Arusu,,,Artificial Spirit,1125011,,,,,,,,,,,,,aa,139,98,165,187,135,,,,,,,,,8d7c5a,
 
-,Rio,Sonogami,,,Irregular Spirit,,9/9e/Rio1,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,a,30,28,45,45,31,,,,,,,,,db6196,
-,Rio,Sonogami,,,Irregular Spirit (Eden),,9/9e/Rio1,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,a,43,35,230,52,31,,,,,,,,,db6196,
+,Rio,Sonogami,,,Irregular Spirit,1132011,,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,a,30,28,45,45,31,,,,,,,,,db6196,
+,Rio,Sonogami,,,Irregular Spirit (Eden),1132011,,,,a:Eden:Garden_of_Eden,Paradise of Calamity,,,,,,,,a,43,35,230,52,31,,,,,,,,,db6196,
 
 ,Natsumi,Kyono,,Witch,Spirit,1113011,,s:Netzach,Victory,a:Haniel,Forgery Witch,ad:Adonai Tzabaoth:7,,144,34,69,55,70,b,79,65,180,82,174,s,81,30,58,90,80,74,pm,00a572,
 ,Natsumi,Kyono,,Witch,Spirit (Haniel),1113012,b/bf/Natsumi_Adult_Form,s:Netzach,Victory,a:Haniel,Forgery Witch,ad:Adonai Tzabaoth:7,,170,,94,55,70,b,79,65,180,82,174,s,81,30,58,90,80,74,pm,00a572,
@@ -45,7 +45,7 @@ series,firstname,lastname,gender,codename,form,icon_id,image_id,sephiras,sephira
 ,Origami,Tobiichi,,,AST Wizard,1102011,,,,w:No Pain,,cr:Basic,,152,45,75,55,79,,,,,,,b,58,77,20,28,30,57,pf,!dfc663,
 ,Origami,Tobiichi,,,DEM Wizard,1102081,1102018,,,w:Clarent,,cr:Mordred,,152,45,75,55,79,,,,,,,aa,77,77,45,77,53,62,l,!dfc663,
 ,Origami,Tobiichi,,Angel,Spirit,1102091,,s:Kether,Crown,a:Metatron,Angel of Extinction,ad:Ehyeh:1,,152,45,75,55,79,aaa,158,152,219,136,243,s,95,78,60,81,40,83,h,!dfc663,
-,Origami,Tobiichi,,Devil,Inverse Spirit,1102101,,q:Thamiel:Kether,Adversary,d:Satan,Demon of Salvation,,,152,45,75,55,79,ss,198,202,242,128,230,ss,,,,,,,d,!dfc663,
+,Origami,Tobiichi,,Devil,Inverse Spirit,1102101,,q:Thamiel:Kether,Adversary,d:Satan,Demon of Salvation,,,152,45,75,55,79,ss,198,202,242,128,230,ss,95,77,77,65,77,77,d,!dfc663,
 ,Origami,Tobiichi,,Angel,Wizard Spirit,,,s:Kether,Crown,a:Metatron;w:Einherjar,Angel of Extinction,ad:Ehyeh:1;cr:Brynhildr,,152,45,75,55,79,,,,,,,,,,,,,,,!dfc663,true
 
 ,Ren,,,,Irregular Spirit,,f/f5/Ren,,,a:Samael,Pure Land of Miasma,,,,,,,,,,,,,,,,,,,,,,5d396c,
@@ -70,9 +70,7 @@ series,firstname,lastname,gender,codename,form,icon_id,image_id,sephiras,sephira
 
 Date A Bullet,Sawa,Yamauchi,,White Queen,Spirit,1127011,,,,d:Lucifugus:Lucifuge_Rofocale,Lunatic Emperor,,,157,,85,59,87,,,,,,,ss,96,90,58,81,52,76,v,b69eb6,
 
-Date A Bullet,Hibiki,Higoromo,,,Quasi-Spirit,1126011,,,,u:King Killing,Throne Usurper,ad:Breeching Air:133,,,,,,,,,,,,,,,,,,,,,87a0be,
-
-Date A Bullet,Tsuan,,,,Quasi-Spirit,1128011,,,,u:Lailaps,Celestial Wolf,ad:Brinicle:15,,,,,,,,,,,,,,,,,,,,,b1507d,
+Date A Bullet,Tsang,,,,Quasi-Spirit,1128011,,,,u:Lailaps,Celestial Wolf,ad:Brinicle:15,,,,,,,,,,,,,,,,,,,,,b1507d,
 
 
 Index,Mikoto,Misaka,,,Esper,1116011,,,,e:Railgun,Super Electromagnetic Cannon,,May 2,161,,78,56,79,,,,,,,ss,95,77,77,77,55,83,l,1692f5,
