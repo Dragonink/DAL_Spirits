@@ -1,0 +1,214 @@
+:root {
+	--theme-contrast-low: white;
+	--theme-contrast-high: #212121;
+}
+
+
+.Tohka {
+	--theme-main: #ce57f0;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Yoshino {
+	--theme-main: #44bf2b;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Kurumi {
+	--theme-main: #dc060e;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Mana {
+	--theme-main: #54a7f9;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Kotori {
+	--theme-main: #ff526b;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Rinne {
+	--theme-main: #c0253e;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Ellen {
+	--theme-main: #bfa7b7;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Kaguya,
+.Yuzuru,
+.Kazamachi {
+	--theme-main: #ff9c10;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Miku {
+	--theme-main: #ce9cff;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Mayuri {
+	--theme-main: #ffc644;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Maria {
+	--theme-main: #939bd5;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Marina {
+	--theme-main: #8d7c5a;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Rio {
+	--theme-main: #db6196;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Natsumi {
+	--theme-main: #00a572;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Origami {
+	--theme-main: #dfc663;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Ren {
+	--theme-main: #5d396c;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Nia {
+	--theme-main: #b3bec6;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Artemisia {
+	--theme-main: #2573aa;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Mukuro {
+	--theme-main: #d4a18a;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Nibelcole {
+	--theme-main: #596b84;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Reine,
+.Mio {
+	--theme-main: white;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Isaac {
+	--theme-main: #4c4348;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Sawa {
+	--theme-main: #b69eb6;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Tsang {
+	--theme-main: #71bbfd;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Mikoto {
+	--theme-main: #1692f5;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Kuroko {
+	--theme-main: #ff9c04;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Neptune {
+	--theme-main: #9c5ade;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Blanc {
+	--theme-main: #afd0f9;
+	--theme-contrast: var(--theme-contrast-high);
+}
+
+.Noire {
+	--theme-main: #1d50c7;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Vert {
+	--theme-main: #33aa66;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Ais {
+	--theme-main: #44afff;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Kaede {
+	--theme-main: #ed5879;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+.Risa {
+	--theme-main: #5799db;
+	--theme-contrast: var(--theme-contrast-low);
+}
+
+
+.element.Physical {
+	--element-color: #7d5c44;
+}
+
+.element.Frost {
+	--element-color: #4f6e91;
+}
+
+.element.Dark {
+	--element-color: #52467d;
+}
+
+.element.Fire {
+	--element-color: #99434b;
+}
+
+.element.Lightning {
+	--element-color: #4958c2;
+}
+
+.element.Tempest {
+	--element-color: #537b5a;
+}
+
+.element.Spiritual {
+	--element-color: #ce9cff;
+}
+
+.element.Holy {
+	--element-color: #ad9d72;
+}
+
+.element.Magic {
+	--element-color: #8a3c7e;
+}
+
+.element.Space {
+	--element-color: #b69eb6;
+}

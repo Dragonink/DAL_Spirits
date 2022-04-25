@@ -1,0 +1,65 @@
+series,firstname,lastname,gender,codename,form,media,icon_id,image_id,sephiras,angels,astraldresses,birthdate,height,weight,bust,waist,hips,class,spacequake_class,angel_class,astraldress_class,strength,consistency,spirit_power,agility,intelligence,rank,attack,combo,support,defense,control,damage,elements,wiki_link,spoiler
+,Tohka,Yatogami,,Princess,Spirit,lsamvg,1101011,,s:Malkuth:Kingdom::,a:Sandalphon:Massacre Ruler:,ad:Adonai Melek:10,April 10,155,49,84,58,83,AAA,B,AAA,AAA,230,202,125,142,32,A,60,40,18,60,45,78,p,Tohka_Yatogami#Spirit_Form_,
+,Tohka,Yatogami,,Princess,Inverse Spirit,lag,1101014,1101031,q:Nehemoth:Whispers:Malkuth:,d:Nahemah:Tyrant Ruler:Naamah_(demon),,April 10,155,49,84,58,83,SS,A,AAA,AAA,240,178,201,150,33,SS,95,61,39,80,39,100,d,Tohka_Yatogami#Inverse_Form_,
+,Tohka,Yatogami,,Princess,Full,mg,1101015,,s:Malkuth:Kingdom::,a:Sandalphon:Massacre Ruler:;a:Shekinah:Emperor of Annihilation:,ad:Adonai Melek Ensufall:10000,April 10,155,49,84,58,83,,,,,,,,,,S,95,95,20,60,58,80,ph,Tohka_Yatogami#Full_Form_,
+,Tohka,Yatogami,,Princess,Dea,l,,,s:Malkuth:Kingdom::,a:Sandalphon:Massacre Ruler:;d:Nahemah:Tyrant Ruler:Naamah_(demon),,April 10,155,49,84,58,83,,,,,,,,,,,,,,,,,,Tohka_Yatogami#Dea_Form_,true
+,Tohka,Yatogami,,Princess,Beast,l,,4/42/Beast_(Parallel_World_Tohka),q:Nehemoth:Whispers:Malkuth:,a:Sandalphon:Massacre Ruler:;a:Metatron:Angel of Extinction:;a:Rasiel:Tome of Revelation:;a:Zafkiel:Time Emperor:;a:Zadkiel:Freezing Puppet:;a:Camael:Bright Burning Annihilating Demon:;a:Michael:Seal-Removing Lord:Michael_(archangel);a:Haniel:Forgery Witch:;a:Raphael:Hurricane Knight:Raphael_(archangel);a:Gabriel:Army-Breaking Songstress:;d:Nahemah:Tyrant Ruler:Naamah_(demon),,April 10,155,49,84,58,83,SSS,SS,SSS,SS,510,492,502,345,32,,,,,,,,,Tohka_Yatogami_(Parallel_World),true
+,Yoshino,Himekawa,,Hermit,Spirit,lsamvg,1103011,,s:Chesed:Kindness::,a:Zadkiel:Freezing Puppet:,ad:El:4,March 20,144,35,73,55,78,B,C,AA,B,95,82,199,212,152,B,40,50,60,25,60,39,i,Yoshino_Himekawa#Spirit_Form__,
+,Yoshino,Himekawa,,Hermit,Ice Princess,g,1103021,,s:Chesed:Kindness::,a:Zadkiel:Freezing Puppet:,ad:El:4,March 20,144,35,73,55,78,,,,,,,,,,S,81,62,62,78,78,65,i,,
+,Yoshino,Himekawa,,Hermit,Shiryon,lg,1103131,,s:Chesed:Kindness::,a:Zadkiel:Freezing Puppet:,ad:El:4,March 20,144,35,73,55,78,,,,,,,,,,,,,,,,,,Yoshino_Himekawa#Spirit_Form__,
+,Kurumi,Tokisaki,,Nightmare,Spirit,lsamvg,1104011,,s:Binah:Understanding:Binah_(Kabbalah):,a:Zafkiel:Time Emperor:,ad:Elohim:3,June 10,157,48,85,59,87,S,C,S,C,109,80,220,103,201,S,80,76,76,59,59,78,d,Kurumi_Tokisaki#Spirit_Form_,
+,Kurumi,Tokisaki,,Nightmare,Crimson Nightmare,g,1104023,1104016,s:Binah:Understanding:Binah_(Kabbalah):,a:Zafkiel:Time Emperor:,ad:Elohim:3,June 10,157,48,85,59,87,,,,,,,,,,SS,95,85,85,100,85,61,d,,
+,Kurumi,Tokisaki,,Nightmare,Wizard Spirit,s,,,s:Binah:Understanding:Binah_(Kabbalah):,a:Zafkiel:Time Emperor:,ad:Elohim:3;cr:Atlach-Nacha:,June 10,157,48,85,59,87,,,,,,,,,,,,,,,,,,Kurumi_Tokisaki#Spirit_Form_,
+,Kurumi,Tokisaki,,Nightmare,Double Spirit,l,,,s:Binah:Understanding:Binah_(Kabbalah):;s:Chokhmah:Wisdom::,a:Zafkiel:Time Emperor:;a:Rasiel:Tome of Revelation:,,June 10,157,48,85,59,87,,,,,,,,,,,,,,,,,,Kurumi_Tokisaki#Rasiel,true
+,Kurumi,Tokisaki,,,Ratatoskr Wizard,l,,,,w:Yggdra Folium::,,June 10,157,48,85,59,87,,,,,,,,,,,,,,,,,,Kurumi_Tokisaki#Wizard,true
+,Mana,Takamiya,,,DEM Wizard,lamg,1106011,,,w:Murakumo::,cr:Murakumo:,,147,,,,,,,,,,,,,,A,55,77,30,30,30,77,l,Mana_Takamiya,
+,Mana,Takamiya,,,Ratatoskr Wizard,lsamvg,1106021,,,w:Vanargandr::,cr:Vanargandr:,,147,,,,,,,,,,,,,,AA,77,62,40,59,40,77,pl,Mana_Takamiya#CR-Unit,
+,Kotori,Itsuka,,Efreet,Spirit,lsamvg,1105011,,s:Geburah:Severity::,a:Camael:Bright Burning Annihilating Demon:,ad:Elohim Gibor:5,August 3,145,48,72,53,74,AA,B,AA,A,150,100,215,130,178,S,80,57,34,95,55,80,pf,Kotori_Itsuka#Spirit_Form,
+,Rinne,Sonogami,,Ruler,Irregular Spirit,vg,1133011,,,a:Eden:Paradise of Calamity:Garden_of_Eden,,,,,,,,SS,S,SS,S,110,180,210,101,170,SS,99,73,55,62,72,93,m,Rinne_Sonogami#Spirit_Form,
+,Rinne,Sonogami,,Ruler,Irregular Spirit (Eden),v,1133011,,,a:Eden:Paradise of Calamity:Garden_of_Eden,,,,,,,,SS,S,SS,S,205,220,244,209,200,,,,,,,,,Rinne_Sonogami#Spirit_Form,
+,Ellen,Mathers,,,DEM Wizard,lsamvg,1109011,,,w:Pendragon::,cr:Pendragon:,,160,,86,60,87,,,,,,,,,,S,77,65,32,100,50,82,pl,Ellen_Mira_Mathers#CR-Unit,
+,Kaguya,Yamai,,Berserk,Spirit,lsamvg,1107011,,s:Hod:Splendor:Hod_(Kabbalah):,a:Raphael:Hurricane Knight:Raphael_(archangel),ad:Elohim Tzabaoth:8,October 18,157,,79,56,81,AAA,AA,AA,B,180,140,179,240,69,AA,73,62,53,53,30,80,pt,Yamai_Kazamachi#Kaguya_Yamai,
+,Kaguya,Yamai,,Berserk,Inverse Spirit,l,,,q:Samael:Desolation:Hod:,d:Adramelech::,,October 18,157,,79,56,81,,,,,,,,,,,,,,,,,,Yamai_Kazamachi#Kaguya_Yamai,true
+,Yuzuru,Yamai,,Berserk,Spirit,lsamvg,1108011,,s:Hod:Splendor:Hod_(Kabbalah):,a:Raphael:Hurricane Knight:Raphael_(archangel),ad:Elohim Tzabaoth:8,October 18,158,,90,61,86,AAA,AA,AA,B,170,129,185,240,84,AA,75,75,42,54,33,83,pt,Yamai_Kazamachi#Yuzuru_Yamai,
+,Yuzuru,Yamai,,Berserk,Inverse Spirit,l,,,q:Samael:Desolation:Hod:,d:Adramelech::,,October 18,158,,90,61,86,,,,,,,,,,,,,,,,,,Yamai_Kazamachi#Yuzuru_Yamai,true
+,Kazamachi,Yamai,,Berserk,Spirit,l,,,s:Hod:Splendor:Hod_(Kabbalah):,a:Raphael:Hurricane Knight:Raphael_(archangel),ad:Elohim Tzabaoth:8,October 18,,,,,,S,S,AAA,AAA,226,198,204,386,178,,,,,,,,,Yamai_Kazamachi,true
+,Miku,Izayoi,,Diva,Spirit,lsamvg,1110011,,s:Yesod:Foundation::,a:Gabriel:Army-Breaking Songstress:,ad:Shaddai El Chai:9,January 19,165,,94,63,88,A,B,AA,C,85,72,159,67,70,AA,80,42,85,60,75,64,s,Miku_Izayoi#Spirit_Form,
+,Mayuri,,,Judgement,Irregular Spirit,smvg,1112011,1120011,,a:Kerubiel:Thunder Sanctuary:,ad:Adonai Melekh:10000,,154,36,80,64,90,,,,,,,,,,SS,77,77,77,77,77,77,h,Mayuri#Spirit_Form,
+,Maria,Arusu,,,Artificial Spirit,lvg,1124011,,,,,,,,,,,C,,,AA,99,102,178,121,121,SS,86,77,64,85,65,86,h,Maria_Arusu#Spirit_Form,
+,Marina,Arusu,,,Artificial Spirit,vg,1125011,,,,,,,,,,,AA,,,AA,139,98,165,187,135,SS,50,50,67,61,88,77,d,Marina_Arusu#Spirit_Form,
+,Rio,Sonogami,,,Irregular Spirit,vg,1132011,,,a:Eden:Paradise of Calamity:Garden_of_Eden,,,,,,,,A,A,S,C,30,28,45,45,31,SS,70,66,85,85,94,64,m,Rio_Sonogami,
+,Rio,Sonogami,,,Irregular Spirit (Eden),v,1132011,,,a:Eden:Paradise of Calamity:Garden_of_Eden,,,,,,,,A,A,S,C,43,35,230,52,31,,,,,,,,,Rio_Sonogami,
+,Natsumi,Kyono,,Witch,Spirit,lsavg,1113011,,s:Netzach:Victory::,a:Haniel:Forgery Witch:,ad:Adonai Tzabaoth:7,June 23,144,34,69,55,70,B,C,AA,C,79,65,180,82,174,S,81,30,58,90,80,74,pm,Natsumi_Kyouno#Normal_,
+,Natsumi,Kyono,,Witch,Spirit (Haniel),lsavg,1113012,b/bf/Natsumi_Adult_Form,s:Netzach:Victory::,a:Haniel:Forgery Witch:,ad:Adonai Tzabaoth:7,June 23,170,,94,55,70,B,C,AA,C,79,65,180,82,174,S,81,30,58,90,80,74,pm,Natsumi_Kyouno#Adult_Form_,
+,Origami,Tobiichi,,,AST Wizard,lsamvg,1102011,,,w:No Pain::,cr:Basic:,November 11,152,45,75,55,79,,,,,,,,,,B,58,77,20,28,30,57,pf,Origami_Tobiichi#AST_,
+,Origami,Tobiichi,,,DEM Wizard,lg,1102081,1102018,,w:Clarent::,cr:Mordred:,November 11,152,45,75,55,79,,,,,,,,,,AA,77,77,45,77,53,62,l,Origami_Tobiichi,
+,Origami,Tobiichi,,Angel,Spirit,lsavg,1102091,,s:Kether:Crown::,a:Metatron:Angel of Extinction:,ad:Ehyeh:1,November 11,152,45,75,55,79,AAA,AA,AAA,AA,158,152,219,136,243,S,95,78,60,81,40,83,h,Origami_Tobiichi#Spirit_Form_,
+,Origami,Tobiichi,,Devil,Inverse Spirit,lag,1102101,,q:Thamiel:Adversary:Kether:,d:Satan:Demon of Salvation:,,November 11,152,45,75,55,79,SS,AAA,AAA,AA,198,202,242,128,230,SS,95,77,77,65,77,77,d,Origami_Tobiichi#Inverse_Form_,
+,Origami,Tobiichi,,Angel,Wizard Spirit,la,,,s:Kether:Crown::,a:Metatron:Angel of Extinction:;w:Einherjar::,ad:Ehyeh:1;cr:Brynhildr:,November 11,152,45,75,55,79,,,,,,,,,,,,,,,,,,Origami_Tobiichi,true
+,Ren,,,,Irregular Spirit,v,,f/f5/Ren,,a:Samael:Pure Land of Miasma:,,,,,,,,,,,,,,,,,,,,,,,,,Ren,
+,Nia,Honjo,,Sister,Spirit,lsa,,f/f6/Nia,s:Chokhmah:Wisdom::,a:Rasiel:Tome of Revelation:,ad:Yod:2,February 29,168,,76,59,80,A,C,S,C,60,59,142,64,245,,,,,,,,,Nia_Honjo,
+,Nia,Honjo,,Sister,Inverse Spirit,la,,,q:Chaigidel:Confusion:Chokhmah:,d:Belzebuth:Tome of Divine Corruption:Beelzebub,,February 29,168,,76,59,80,,,,,,,,,,,,,,,,,,Nia_Honjo,
+,Artemisia,Ashcroft,,,DEM Wizard,lsa,,b/b6/Artemisia_Bell_Ashcroft,,w:Arondight::,cr:Lancelot:,,,,,,,,,,,,,,,,,,,,,,,,Artemisia_Bell_Ashcroft#CR-Unit,
+,Mukuro,Hoshimiya,,Zodiac,Spirit,lsa,,4/46/Mukuro,s:Tiphareth:Beauty::,a:Michael:Seal-Removing Lord:Michael_(archangel),ad:Eloah:6,September 12,148,,91,60,88,AAA,AAA,S,A,142,121,205,138,67,,,,,,,,,Mukuro_Hoshimiya,
+,Mukuro,Hoshimiya,,Zodiac,Spirit (Shifuru),lsa,,4/46/Mukuro,s:Tiphareth:Beauty::,a:Michael:Seal-Removing Lord:Michael_(archangel),ad:Eloah:6,September 12,148,,91,60,88,S,AAA,S,AAA,205,192,225,221,67,,,,,,,,,Mukuro_Hoshimiya,
+,Mukuro,Hoshimiya,,Zodiac,Inverse Spirit,l,,,q:Thagirion:Ugly:Tiphareth:,d:Belphegor::,,September 12,148,,91,60,88,,,,,,,,,,,,,,,,,,Mukuro_Hoshimiya,true
+,Nibelcole,,,,Pseudo-Spirit,l,,f/ff/Nibelcol_profile_pic,,d:Belzebuth Yeled:Tome of Divine Corruption:Beelzebub,ad:Chaigidel Yeled:2i,,158,,83,58,84,A,C,C,C,52,43,56,99,53,,,,,,,,,Nibelcole,true
+,Reine,Murasame,,Phantom,Irregular Spirit,la,,5/55/Reine_Spirit,,,ad:Yah:0,,164,,95,63,89,Ex,Ex,Ex,Ex,999,999,999,999,999,,,,,,,,,Reine_Murasame#Spirit_Form,true
+,Mio,Takamiya,,Deus,Spirit of Origin,l,,f/f1/Mio_Takamiya,,a:Ain Soph Aur:Sanctuary of All Things in Creation:;a:Ain Soph:Samsara of Paradise:;a:Ain:Angel of Void:Ain_Soph,ad:Yah:0,December 25,160,,89,60,87,Ex,Ex,Ex,Ex,999,999,999,999,999,,,,,,,,,Mio_Takamiya#Spirit_Form,true
+,Isaac,Westcott,male,,Inverse Spirit,l,,8/80/Sir_Isaac_Ray_Pelham_Westcott,q:Chaigidel:Confusion:Chokhmah:,d:Belzebuth:Tome of Divine Corruption:Beelzebub,,,,,,,,,,,,,,,,,,,,,,,,,Sir_Isaac_Ray_Pelham_Westcott,true
+,Isaac,Westcott,male,,Second Spirit of Origin,l,,8/80/Sir_Isaac_Ray_Pelham_Westcott,,d:Athiel:Altar of Extreme Death:;d:Belial:Eternal Prison:;d:Qemetiel:Demon of Void:,,,,,,,,,,,,,,,,,,,,,,,,,Sir_Isaac_Ray_Pelham_Westcott,true
+Date A Bullet,Sawa,Yamauchi,,White Queen,Spirit,sag,1127011,,,d:Lucifugus:Lunatic Emperor:Lucifuge_Rofocale,,,157,,85,59,87,,,,,,,,,,SS,96,90,58,81,52,76,v,White_Queen,
+Date A Bullet,Tsang,,,,Quasi-Spirit,sag,1128011,,,u:Lailaps:Celestial Wolf:,ad:Brinicle:15,,,,,,,,,,,,,,,,S,72,65,52,73,73,92,p,Tsuan,
+Index,Mikoto,Misaka,,,Esper,g,1116011,,,e:Railgun:Super Electromagnetic Cannon:,,May 2,161,45,78,56,79,,,,,,,,,,SS,95,77,77,77,55,83,l,,
+Index,Kuroko,Shirai,,,Esper,g,1117011,,,e:Teleport:Spatial Movement:,,July 14,152,,,,,,,,,,,,,,S,60,74,82,62,76,59,p,,
+Neptunia,Neptune,,,,CPU,g,1114011,,l:Planeptune:Land of Purple Progress:4/43:,w:Goddess of Fate's Sword::,,,146,38,73,54,76,,,,,,,,,,SS,96,86,50,70,60,82,p,,
+Neptunia,Neptune,,,Purple Heart,HDD CPU,g,1114012,1114011,l:Planeptune:Land of Purple Progress:4/43:,w:Goddess of Fate's Sword::,,,164,48,87,58,85,,,,,,,,,,SS,96,86,50,70,60,82,p,,
+Neptunia,Blanc,,,,CPU,g,1115011,,l:Lowee:Land of White Serenity:4/45:,w:Goddess of Order's Axe::,,,144,36,71,53,77,,,,,,,,,,SS,75,60,60,92,85,75,i,,
+Neptunia,Blanc,,,White Heart,HDD CPU,g,1115012,1115011,l:Lowee:Land of White Serenity:4/45:,w:Goddess of Order's Axe::,,,146,37,73,53,77,,,,,,,,,,SS,75,60,60,92,85,75,i,,
+Neptunia,Noire,,,,CPU,g,1122011,,l:Lastation:Land of Black Regality:b/b5:,w:Goddess of Prosperity's Blade::,,,158,43,83,56,82,,,,,,,,,,SS,95,65,65,70,75,85,pl,,
+Neptunia,Noire,,,Black Heart,HDD CPU,g,1122012,,l:Lastation:Land of Black Regality:b/b5:,w:Goddess of Prosperity's Blade::,,,160,45,83,57,83,,,,,,,,,,SS,95,65,65,70,75,85,pl,,
+Neptunia,Vert,,,,CPU,g,1123011,,l:Leanbox:Land of Green Pastures:f/f0:,w:Goddess of Fertility's Spear::,,,163,48,93,61,87,,,,,,,,,,SS,65,77,95,68,85,65,t,,
+Neptunia,Vert,,,Green Heart,HDD CPU,g,1123012,,l:Leanbox:Land of Green Pastures:f/f0:,w:Goddess of Fertility's Spear::,,,167,49,95,61,88,,,,,,,,,,SS,65,77,95,68,85,65,t,,
+DanMachi,Ais,Wallenstein,,,Adventurer,g,1131011,,,w:Sword Princess' Sword::,,,162,,84,54,75,,,,,,,,,,SS,96,88,46,77,66,95,t,,
+Bofuri,Kaede,Honjo,,Maple,Player,g,1137011,,,w:Maple’s Shield::,,,145,,,,,,,,,,,,,,SS,77,67,85,100,50,92,d,,
+Bofuri,Risa,Shiromine,,Sally,Player,g,1136011,,,w:Sally’s Daggers::,,,155,,,,,,,,,,,,,,SS,92,92,60,95,40,85,m,,

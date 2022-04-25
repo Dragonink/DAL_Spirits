@@ -1,0 +1,176 @@
+div#SpiritDetails {
+    display: flex;
+}
+
+div#SpiritDetails>* {
+    flex: 0 0 50%;
+    height: 100%;
+}
+
+div#SpiritDetails>header {
+    display: flex;
+    flex-direction: column;
+}
+
+div#SpiritDetails>header>h1 {
+    flex: 0 0 auto;
+    justify-content: space-between;
+    margin: 0;
+    padding: .5em 0;
+    text-align: center;
+    background-color: var(--theme-main);
+    color: var(--theme-contrast);
+}
+
+div#SpiritDetails>header>img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+div#SpiritDetails>main {
+    padding: 16px;
+    overflow-y: auto;
+}
+
+div#SpiritDetails>main>a {
+    display: block;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+div#SpiritDetails>main>a::before {
+    content: "🕮";
+    margin-right: 8px;
+}
+
+div#SpiritDetails>main a {
+    color: var(--theme-main);
+}
+
+div#SpiritDetails>main>section>h2 {
+    border: 1px solid var(--theme-main);
+    border-left: .75em solid var(--theme-main);
+    padding-left: .5em;
+}
+
+div#SpiritDetails>main>section table th {
+    padding: 0 16px;
+}
+
+div#SpiritDetails>main>section#attributes details>table img {
+    width: 100%;
+    padding: 0 16px;
+}
+
+div#SpiritDetails>main>section#lore-stats table img,
+div#SpiritDetails>main>section#gacha-stats table img {
+    height: 2em;
+}
+
+div#SpiritDetails>main>section#media {
+    display: flex;
+    gap: 8px;
+}
+
+div#SpiritDetails>main>section#media>span {
+    flex: 1 1 calc(100% / 6);
+    border-radius: 12px;
+    padding: 4px;
+    text-align: center;
+    cursor: help;
+    font-size: 0;
+}
+
+div#SpiritDetails>main>section#media:hover>span {
+    font-size: .75em;
+}
+
+div#SpiritDetails>main>section#media>span.MainLightNovels {
+    background-color: #ce57f0;
+}
+
+div#SpiritDetails>main>section#media>span.SpinoffLightNovels {
+    background-color: #54a7f9;
+}
+
+div#SpiritDetails>main>section#media>span.Anime {
+    background-color: white;
+    color: var(--theme-contrast-high);
+}
+
+div#SpiritDetails>main>section#media>span.Movie {
+    background-color: #ffc644;
+    color: var(--theme-contrast-high);
+}
+
+div#SpiritDetails>main>section#media>span.VisualNovels {
+    background-color: #c0253e;
+}
+
+div#SpiritDetails>main>section#media>span.Gacha {
+    background-color: #30ab7d;
+}
+
+div#SpiritDetails>main>section#lore-stats>div,
+div#SpiritDetails>main>section#gacha-stats>div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+div#SpiritDetails>main>section#lore-stats>div>table,
+div#SpiritDetails>main>section#gacha-stats>div>table {
+    height: fit-content;
+    margin: auto 0;
+}
+
+div#SpiritDetails>main>section#gacha-stats span.element {
+    display: block;
+    border-radius: calc(1.5em + 2 * 4px);
+    padding: 4px;
+    background-color: var(--element-color);
+}
+
+div#SpiritDetails>main>section#gacha-stats span.element>img {
+    height: 1.5em;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+}
+
+div#SpiritDetails>main>section svg {
+    max-height: 500px;
+}
+
+div#SpiritDetails>main>section svg>.wireframe {
+    stroke: white;
+    fill: none;
+}
+
+div#SpiritDetails>main>section svg>line.wireframe {
+    opacity: .25;
+}
+
+div#SpiritDetails>main>section svg>polygon:not(.wireframe) {
+    stroke: none;
+    fill: var(--theme-main);
+}
+
+div#SpiritDetails>main>section svg>text {
+    stroke: none;
+    fill: white;
+    font-size: .7em;
+    cursor: help;
+}
+
+div#SpiritDetails>main>section svg>text.anchor-x-middle {
+    text-anchor: middle;
+}
+
+div#SpiritDetails>main>section svg>text.anchor-x-end {
+    text-anchor: end;
+}
+
+div#SpiritDetails>main>section svg>text.anchor-y-top {
+    dominant-baseline: hanging;
+}

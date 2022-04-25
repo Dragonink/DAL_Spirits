@@ -1,0 +1,82 @@
+div#Home {
+    display: flex;
+    flex-direction: column;
+}
+
+div#Home>header {
+    flex: 0 0 auto;
+    text-align: center;
+}
+
+div#Home>main {
+    flex: 1 0 0;
+    padding: 8px;
+    overflow-y: auto;
+}
+
+div#Home>main>nav>div.series {
+    --border-width: 3px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--border-width) * 2);
+}
+
+div#Home>main>nav>div.series>h2 {
+    flex: 1 0 100%;
+}
+
+div#Home>main>nav>div.series>h2>span {
+    margin-left: 16px;
+    border-radius: 5px;
+    padding: 0 8px;
+    cursor: help;
+    font-size: .5em;
+    background-color: #30ab7d;
+}
+
+div#Home>main>nav>div.series>div.chara {
+    border-radius: 5px;
+    border: var(--border-width) solid var(--theme-main);
+    padding: 8px;
+}
+
+div#Home>main>nav>div.series>div.chara>h3 {
+    margin: 0;
+}
+
+div#Home>main>nav>div.series>div.chara>div {
+    display: flex;
+    gap: 4px;
+}
+
+div#Home>main>nav>div.series>div.chara>div>a {
+    --border-radius: 8px;
+
+    display: flex;
+    border-radius: var(--border-radius);
+    width: min-content;
+    color: white;
+    text-decoration: none;
+    word-wrap: normal;
+}
+
+div#Home>main>nav>div.series>div.chara>div>a:hover {
+    background-color: var(--theme-main);
+    color: var(--theme-contrast);
+}
+
+div#Home>main>nav>div.series>div.chara>div>a>p {
+    margin: auto 0;
+    padding-left: var(--border-radius);
+}
+
+div#Home>main>nav>div.series>div.chara>div>a>div.icon-placeholder {
+    width: 156px;
+    height: 92px;
+}
+
+div#Home>main>div#nav-options {
+    display: flex;
+    justify-content: center;
+}
