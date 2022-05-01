@@ -7,7 +7,7 @@ fn main() -> io::Result<()> {
 
 	// Retrieve variables for Makefile
 	let mut dotenv = File::create("rust.env")?;
-	for var in ["CARGO_PKG_NAME", "TARGET"] {
+	for var in ["CARGO_PKG_NAME", "CARGO_PKG_VERSION_MAJOR", "TARGET"] {
 		dotenv.write_fmt(format_args!(
 			"{var}={}\n",
 			std::env::var(var).unwrap_or_else(|_| panic!("missing environment variable \"{var}\""))

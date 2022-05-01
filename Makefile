@@ -19,12 +19,17 @@ out :
 #!SECTION
 
 #SECTION Rust
-RUST_PACKAGE := $(shell $(awk) -F= '$$1=="CARGO_PKG_NAME"{print $$2}' rust.env)
-RUST_TARGET := $(shell $(awk) -F= '$$1=="TARGET"{print $$2}' rust.env)
+extract_cargo_variable = $(shell $(awk) -F= '$$1=="$1"{print $$2}' rust.env)
+RUST_PKG_NAME := $(call extract_cargo_variable,CARGO_PKG_NAME)
+RUST_PKG_VERSION := $(call extract_cargo_variable,CARGO_PKG_VERSION_MAJOR)
+RUST_TARGET := $(call extract_cargo_variable,TARGET)
 
-OUT_RUST_wasm := target/$(RUST_TARGET)/$(if $(RELEASE),release,debug)/$(RUST_PACKAGE).wasm
+CACHE_NAME := v$(RUST_PKG_VERSION)
+
+OUT_RUST_wasm := target/$(RUST_TARGET)/$(if $(RELEASE),release,debug)/$(RUST_PKG_NAME).wasm
 $(OUT_RUST_wasm) : $(call rwildcard,src/,*.rs)
 	MAKE_DATA_PATH="$(patsubst out/%,./%,$(OUT_DATA))" \
+	CACHE_NAME="$(CACHE_NAME)" \
 	$(cargo) build $(if $(RELEASE),--release)
 $(OUT_RUST_wasm) : .EXTRA_PREREQS := $(.EXTRA_PREREQS) Cargo.*
 #!SECTION
@@ -49,7 +54,6 @@ ifdef RELEASE
 	$(esbuild) \
 		--log-level=warning \
 		--target=es2021 \
-		--format=esm \
 		--minify \
 		--outfile="$|/$(OUTPUT_PREFIX).js" \
 		--allow-overwrite \
@@ -92,10 +96,27 @@ else
 endif
 #!SECTION
 
+#SECTION JavaScript Workers
+server_root = $(patsubst out/%,\"/%\",$1)
+
+OUT_JS_workers := $(patsubst assets/%,out/%,$(wildcard assets/*.worker.js))
+$(OUT_JS_workers) : out/%.worker.js : assets/%.worker.js | out
+	$(esbuild) \
+		--log-level=warning \
+		--target=es2021 \
+		--define:CACHE_NAME=\"$(CACHE_NAME)\" \
+		--define:ASSETS="[\"/\", $(call server_root,$(OUT_CSS)), $(call server_root,$(OUT_WASMBG_js)), $(call server_root,$(OUT_WASMBG_wasm)), $(call server_root,$(OUT_DATA))]" \
+		$(if $(RELEASE),--minify) \
+		--outfile=$@ \
+		$<
+#!SECTION
+
 .PHONY : all
-all : $(OUT_WASMBG_wasm) $(OUT_WASMBG_js) $(OUT_CSS) $(OUT_HTML) $(OUT_DATA)
+all : $(OUT_WASMBG_wasm) $(OUT_WASMBG_js) $(OUT_JS_workers) $(OUT_CSS) $(OUT_HTML) $(OUT_DATA)
 .DEFAULT_GOAL := all
 
-.PHONY : clean
-clean :
+.PHONY : mostlyclean clean
+mostlyclean :
 	rm -rf out
+clean : mostlyclean
+	$(cargo) clean

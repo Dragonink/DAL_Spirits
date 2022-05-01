@@ -72,6 +72,7 @@ dependencies = [
  "either",
  "enumflags2",
  "futures",
+ "js-sys",
  "once_cell",
  "regex",
  "serde",
